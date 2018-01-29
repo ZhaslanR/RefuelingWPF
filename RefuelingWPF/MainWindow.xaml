@@ -1,0 +1,57 @@
+﻿<Window x:Class="RefuelingWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RefuelingWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="395.694" Width="525">
+    <Grid>
+        <Expander Header="Бензин" Height="100" Width="200" Margin="0,0,300,220">
+            <StackPanel>
+                <TextBlock>Выбирете номер бензина</TextBlock>
+                <CheckBox x:Name="checkBoxOil1">92</CheckBox>
+                <CheckBox x:Name="checkBoxOil2">95</CheckBox>
+                <CheckBox x:Name="checkBoxOil3">90</CheckBox>
+            </StackPanel>
+        </Expander>
+
+        <Expander Header="Бургеры" Height="100" Width="200" Margin="8,100,309,120">
+            <StackPanel>
+                <TextBlock>Выберете бургер</TextBlock>
+                <CheckBox x:Name="checkBoxBurger1">Бургер</CheckBox>
+                <CheckBox x:Name="checkBoxBurger2">Чикен бургер</CheckBox>
+                <CheckBox x:Name="checkBoxBurger3">Бауырсак Бургер</CheckBox>
+            </StackPanel>
+        </Expander>
+
+        <Expander Header="Напитки" Height="100" Width="200" Margin="238,0,79,220">
+            <StackPanel>
+                <TextBlock>Выберете напиток</TextBlock>
+                <CheckBox x:Name="checkBoxBeverages1" IsChecked="False">Coca-cola</CheckBox>
+                <CheckBox x:Name="checkBoxBeverages2" IsChecked="False">Pepsi</CheckBox>
+                <CheckBox x:Name="checkBoxBeverages3" IsChecked="False" >Sprite</CheckBox>
+            </StackPanel>
+        </Expander>
+
+        <Expander Header="Шоколад" Height="100" Width="200" Margin="238,100,79,120">
+            <StackPanel>
+                <TextBlock>Выберете шоколад</TextBlock>
+                <CheckBox x:Name="checkBoxChocolate1" IsChecked="False">Milky way</CheckBox>
+                <CheckBox x:Name="checkBoxChocolate2" IsChecked="False">Казахстан</CheckBox>
+                <CheckBox x:Name="checkBoxChocolate3" IsChecked="False">Nesquik</CheckBox>
+            </StackPanel>
+        </Expander>
+
+        <Expander Header="Количество бензина" Width="200" Margin="238,223,79,26">
+            <StackPanel>
+                <TextBlock>Выберете количество бензина</TextBlock>
+                <CheckBox x:Name="checkBoxNumbersOil1" IsChecked="False">1 л</CheckBox>
+                <CheckBox x:Name="checkBoxNumbersOil2" IsChecked="False">2 л</CheckBox>
+                <CheckBox x:Name="checkBoxNumbersOil3" IsChecked="False">3 л</CheckBox>
+                <CheckBox x:Name="checkBoxNumbersOil4" IsChecked="False">4 л</CheckBox>
+            </StackPanel>
+        </Expander>
+        <Button x:Name="sumButton" Content="Итог" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top" Width="145" Click="sumButton_Click"/>
+    </Grid>
+</Window>
